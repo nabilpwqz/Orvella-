@@ -1,0 +1,23 @@
+node_modules/
+dist/
+.vercel/
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*service-account*.json
+credentials*.json
+
+# Logs and local tooling
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+.DS_Store
+.idea/
+.vscode/
