@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#141312"/>
+  <circle cx="32" cy="32" r="21" stroke="#C5A880" stroke-width="2.5" stroke-dasharray="3 2"/>
+  <circle cx="32" cy="32" r="16" stroke="#C5A880" stroke-width="1.5"/>
+  <text x="32" y="38" text-anchor="middle" font-family="'Cinzel', Georgia, serif" font-size="20" font-weight="600" fill="#E5C568" letter-spacing="1">O</text>
+</svg>
