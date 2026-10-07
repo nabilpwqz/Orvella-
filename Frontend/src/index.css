@@ -1,0 +1,116 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+/* ===============================================================
+   Tailwind CSS v4 Direct Theme Configuration - Orvella Maison
+   ==========================================================*/
+@theme {
+    --color-perf-bg: var(--perf-bg);
+    --color-perf-card: var(--perf-card);
+    --color-perf-border: var(--perf-border);
+    --color-perf-text-main: var(--perf-text-main);
+    --color-perf-text-muted: var(--perf-text-muted);
+    --color-perf-gold: var(--perf-gold);
+    --color-perf-gold-light: var(--perf-gold-light);
+    --color-perf-input-bg: var(--perf-input-bg);
+    --color-perf-secondary: var(--perf-secondary);
+}
+
+/* ==========================================================================
+   Luxury Theme CSS Variables - Warm Ivory, Deep Charcoal, Champagne Gold
+   Strict: No Blue, No Purple, No Violet, No Green, No Pure White Background
+   ========================================================================== */
+:root {
+    /* Primary: Warm Ivory / Cream */
+    --perf-bg: #FAF7F2;
+    --perf-card: #F3ECE2;
+    --perf-border: #E6DCCE;
+    --perf-text-main: #141312;
+    --perf-text-muted: #736C65;
+    /* Accent: Champagne Gold */
+    --perf-gold: #C29B38;
+    --perf-gold-light: #D8BA6B;
+    --perf-input-bg: #F4EDE3;
+    /* Secondary: Deep Charcoal */
+    --perf-secondary: #262320;
+}
+
+:root.dark {
+    /* Deep Charcoal / Obsidian, Warm Ivory, Champagne Gold */
+    --perf-bg: #121110;
+    --perf-card: #1A1917;
+    --perf-border: #2B2824;
+    --perf-text-main: #F6F3EC;
+    --perf-text-muted: #9E9890;
+    /* Accent: Luminous Champagne Gold */
+    --perf-gold: #D4AF37;
+    --perf-gold-light: #E5C568;
+    --perf-input-bg: #181716;
+    /* Secondary: Deep Charcoal */
+    --perf-secondary: #262422;
+}
+
+/* =================================================
+   Base HTML Elements & Editorial Luxury Typography
+   ====================================================*/
+body {
+    background-color: var(--perf-bg);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--perf-text-main);
+    min-height: 100vh;
+    overflow-x: hidden;
+    letter-spacing: -0.01em;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Headings and High-End Editorial Serif */
+.font-serif-luxury {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: -0.015em;
+}
+
+/* Monumental Roman Caps for Brand & Mood Titles */
+.font-display {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.12em;
+}
+
+/* Subtle Shimmer & Luxury Texture Accents */
+@keyframes subtleShimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.gold-shimmer {
+    background: linear-gradient(90deg, #C29B38 0%, #F5E6B8 50%, #C29B38 100%);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: subtleShimmer 8s linear infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: var(--perf-bg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--perf-border);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--perf-gold);
+}
+
+/* Selection Color */
+::selection {
+    background-color: var(--perf-gold);
+    color: #121110;
+}
